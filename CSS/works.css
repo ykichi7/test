@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Noto Serif JP", serif;
+    /* font-family: "Roboto", sans-serif; */
+}
+
+:root {
+    --mainColor--: #A2D7DB;
+    --baseColor--: #F0EBE5;
+}
+
+
+.works-section {
+    padding: 50px 0;
+
+    h2 {
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+}
+
+.create-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+
+    @media (width <=1000px) {
+        grid-template-columns: 1fr;
+    }
+
+    .create-item {
+        background-color: var(--baseColor--);
+        margin: 0 auto;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+
+        @media (width <=800px) {
+            padding: 30px 10px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+
+        .create-text {
+            text-align: center;
+
+            h3 {
+                padding: 15px 0;
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            p {
+                text-align: left;
+                font-size: 16px;
+                line-height: 50px;
+            }
+        }
+
+        .create-Button {
+            display: inline-block;
+            margin: 10px auto;
+            padding: 1em 2em;
+            background-color: var(--mainColor--);
+            border-radius: 8px;
+        }
+    }
+}
+
+.create-flex {
+    padding: 20px 10px;
+    margin: 0 auto;
+
+    .create-item {
+        background-color: var(--baseColor--);
+        padding: 20px 10px;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        @media (width <=1000px) {
+            grid-template-columns: 1fr;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .create-text {
+            text-align: center;
+            max-width: 600px;
+
+            @media (width <=1000px) {
+               margin: 0 auto;
+            }
+
+            h3 {
+                padding: 15px 0;
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            p {
+                text-align: left;
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+
+        .create-Button {
+            display: inline-block;
+            margin: 10px auto;
+            padding: 1em 2em;
+            background-color: var(--mainColor--);
+            border-radius: 8px;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Noto Serif JP", serif;
+    /* font-family: "Roboto", sans-serif; */
+}
+
+:root {
+    --mainColor--: #A2D7DB;
+    --baseColor--: #F0EBE5;
+}
+
+
+
+.about-section {
+    padding: 50px 0;
+
+    h2 {
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+}
+
+
+.zikosyoukai {
+    .group {
+        max-width: 800px;
+        padding: 10px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .group-text {
+            text-align: center;
+            margin-top: 60px;
+
+            .pMobile {
+                display: none;
+            }
+            h3{
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 50px;
+            }
+        }
+    }
+
+}
+
+.gizyutu {
+    h2 {
+        margin-bottom: 0;
+    }
+    .gizyutu-group {
+        max-width: 800px;
+        padding: 10px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .gizyutu-item {
+            text-align: center;
+            margin-top: 30px;
+            h3{
+                font-size: 24px;
+                font-weight: 400;
+                margin-bottom: 30px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}

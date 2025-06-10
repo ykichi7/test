@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ykichiのサイト</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/rest.css" class="css">
+    <link rel="stylesheet" href="CSS/style.css" class="css">
+    <link rel="stylesheet" href="CSS/contact.css" class="css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <h1><a href="index.html">Kohei Yoshino</a></h1>
+        <div class="hambager" id="js-hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="g-nav">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="" style="color: #000; text-decoration: line-through;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Title -->
+    <section class="page-tite">
+        <h2>Contact</h2>
+    </section>
+    <!-- メインコンテンツ -->
+    <main>
+        <section class="contact-section">
+            <div class="contaier">
+                <h2>お問い合わせ</h2>
+                <p>何かご不明な点などがあれば、<br class=".pMobile">お気軽にお問い合わせください。</p>
+
+                <form action="https://api.staticforms.xyz/submit" method="post" class="form-box">
+                    <input type="hidden" name="apiKey" value="sf_54dh86ben1953726hlkh2gm3">
+                    <input type="hidden" name="redirectTo" value="http://ykichiproject.com/contactFinishi.html">
+                    <!-- ここかえる Valueのリンク先-->
+                    <div class="form-item">
+                        <label>お名前</label>
+                        <input type="text" name="name" placeholder="例）山田 太郎">
+                    </div>
+                    <div class="form-item">
+                        <label>メールアドレス</label>
+                        <input type="email" name="email" placeholder="例）test@aiueo.jp">
+                    </div>
+                    <div class="form-item">
+                        <label>お問い合わせ内容</label>
+                        <textarea rows="7" name="message" placeholder="お問い合わせ内容をご入力ください。"></textarea>
+                    </div>
+                    <div class="form-item">
+                        <button type="submit">送信する</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2><a href="index.html">Kohei Yoshino</a></h2>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="" style="color: #000; text-decoration: line-through;">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">&copy; 2025 Kohei Yoshino</p>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<script src="JS/index.js"></script>
+
+</html>

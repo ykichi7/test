@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-    <link rel="stylesheet" href="CSS/rest.css">
+    <title>Ykichiのサイト</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/rest.css" class="css">
+    <link rel="stylesheet" href="CSS/style.css" class="css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1>これはテストです</h1>
+    <!-- ヘッダー -->
+    <header>
+        <h1><a href="">Kohei Yoshino</a></h1>
+        <div class="hambager" id="js-hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="g-nav">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ヒーロー -->
+    <section class="hero">
+        <h2>見やすさと分かりやすさを<br>カタチに</h2>
+        <p>Kohei Yoshino / Web Design</p>
+    </section>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <section class="main-section hazimeni">
+            <div class="contaier">
+                <h2>はじめに</h2>
+                <p>ご覧いただきありがとうございます。<br>
+                    このサイトはポートフォリオとして <br class="mobilebr">制作されております。<br>
+                    まだまだ未熟なことばかりではありますが<br>
+                    最後までご覧いただけると幸いです。<br>
+                </p>
+            </div>
+        </section>
+
+        <section class="main-section sitenosyousai">
+            <div class="custom-shape-divider-top-1748784005">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill" fill="#F0EBE5"></path>
+                </svg>
+            </div>
+            <div class="contaier">
+                <h2>サイトの詳細</h2>
+                <div class="site-group">
+                    <a href="about.html" class="site-item">
+                        <div class="site-icon">
+                            <img src="Img/user.svg" alt="Aboutのアイコン">
+                        </div>
+                        <div class="site-box">
+                            <h3>About</h3>
+                            <p>私自身について紹介しています。<br>
+                                簡単な自己紹介とこれまでの経歴や<br>
+                                勉強したこと、体験してきたことを<br>
+                                記載しております。<br>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="works.html" class="site-item">
+                        <div class="site-icon">
+                            <img src="Img/pen-tool.svg" alt="Worksのアイコン">
+                        </div>
+                        <div class="site-box">
+                            <h3>Works</h3>
+                            <p>制作したサイトを紹介しています。<br>
+                                模写サイトや仕事で制作したサイトを<br>
+                                掲載しております。<br>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="contact.html" class="site-item">
+                        <div class="site-icon">
+                            <img src="Img/mail.svg" alt="Contactのアイコン">
+                        </div>
+                        <div class="site-box">
+                            <h3>Contact</h3>
+                            <p>ご連絡される際にはこちらから<br>
+                                よろしくお願いいたします。<br>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2><a href="">Kohei Yoshino</a></h2>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">&copy; 2025 Kohei Yoshino</p>
+    </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<script src="JS/index.js"></script>
+
 </html>
